@@ -1,5 +1,5 @@
 require "rspec"
-require "Nand"
+require "nand"
 require "state"
 
 RSpec.describe Nand do
