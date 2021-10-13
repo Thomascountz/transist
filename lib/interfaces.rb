@@ -2,6 +2,16 @@
 
 require "sorbet-runtime"
 
+class OneInputOneOutput
+  extend T::Sig
+  extend T::Helpers
+  abstract!
+
+  sig { abstract.params(inputs: [State]).returns([State]) }
+  def self.eval(inputs)
+  end
+end
+
 class TwoInputOneOutput
   extend T::Sig
   extend T::Helpers
