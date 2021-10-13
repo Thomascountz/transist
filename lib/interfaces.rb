@@ -1,6 +1,7 @@
 # typed: strict
 
 require "sorbet-runtime"
+require "state"
 
 class OneInputOneOutput
   extend T::Sig
