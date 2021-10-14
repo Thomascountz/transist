@@ -32,3 +32,13 @@ class TwoInputTwoOutput
   def self.eval(inputs)
   end
 end
+
+class ThreeInputTwoOutput
+  extend T::Sig
+  extend T::Helpers
+  abstract!
+
+  sig { abstract.params(inputs: [State, State, State]).returns([State, State]) }
+  def self.eval(inputs)
+  end
+end
